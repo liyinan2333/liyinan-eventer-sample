@@ -28,7 +28,7 @@ public class RequestRest {
     @RequestMapping("async/{msg}")
     public String asyncRequest(@PathVariable String msg) {
         // Submit a request event to EventManager
-        EventManager.get().asyncRequest(new PingEvent(msg));
+        EventManager.get().request(new PingEvent(msg));
         return "Request sent.";
     }
 

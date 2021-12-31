@@ -3,18 +3,14 @@ package liyinan.eventer.sample.event;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import java.util.Date;
-
 /**
  * @author LiYinan
- * @date 2021/02/26
+ * @date 2022/01/01
  */
 @Data
 @AllArgsConstructor
-public class SayEvent {
+public class AsyncPingEvent {
 
-    private String name;
-    private Date time;
-    private String message;
+    private String context;
 
 }
