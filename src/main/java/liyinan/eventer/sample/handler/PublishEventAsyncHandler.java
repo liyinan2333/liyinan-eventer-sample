@@ -16,9 +16,9 @@ import org.springframework.stereotype.Component;
  */
 @Async
 @Component
-public class RequestAsyncHandler extends EventHandler<PongEvent> {
+public class PublishEventAsyncHandler extends EventHandler<PongEvent> {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(RequestAsyncHandler.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(PublishEventAsyncHandler.class);
 
     @Override
     protected void handle(PongEvent event) {
